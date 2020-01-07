@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "etag": "^1.8.1",
+    "fresh": "^0.5.2"
+  }
+}

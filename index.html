@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document1</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <h1>Hello World111</h1>
+    <button id="btn">getHTML</button>
+    <button id="btn1">get data</button>
+  </body>
+  <script>
+    const btn = document.querySelector("#btn");
+    const btn1 = document.querySelector("#btn1");
+    btn.onclick = () => {
+      fetch("/");
+    };
+    btn1.onclick = () => {
+      fetch("/list", {
+        method: "GET",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json;charset=UTF-8",
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+        },
+        credentials: 'include',
+        cache: 'no-cache',
+      });
+    };
+  </script>
+  <script src="/index.js"></script>
+</html>
